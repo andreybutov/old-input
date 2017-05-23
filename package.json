@@ -1,0 +1,30 @@
+{
+  "name": "old-input",
+  "version": "1.0.0",
+  "description": "Middleware to recall previously submitted form values in Node.js and Express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreybutov/old-input.git"
+  },
+  "keywords": [
+    "form",
+    "post",
+    "values",
+    "previous",
+    "old",
+    "input"
+  ],
+  "author": "Andrey Butov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreybutov/old-input/issues"
+  },
+  "homepage": "https://github.com/andreybutov/old-input#readme",
+  "dependencies": {
+    "sanitizer": "^0.1.3"
+  }
+}
