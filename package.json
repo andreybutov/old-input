@@ -1,6 +1,6 @@
 {
   "name": "old-input",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Middleware to recall previously submitted form values in Node.js and Express.",
   "main": "index.js",
   "scripts": {

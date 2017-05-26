@@ -83,6 +83,37 @@ app.get('/signup', function(req, res) {
 </html>
 ```
 
+### Associating Error Messages with Input Fields
+
+You can optionally associate error messages with previous POST input field. This makes it easy to retrieve and display individual error messages next to the form fields that failed validation.
+
+```js
+app.post('/signup', function(req, res) {
+	var email = req.body.email;
+	
+	// ... email validation fails
+	
+	req.oldInput.setError('email', 'Please enter a valid email address.');
+	
+	res.redirect('/signup');
+});
+```
+
+```html
+<!-- signup.ejs -->
+
+... 
+
+<% if ( oldInput.error('email') ) { %>
+	<strong><span class='label label-danger'><%= oldInput.error('email') %></span></strong>
+<% } %>		
+		
+<input type="text" name="email" value="<%= oldInput.value('email') %>" />
+			
+...
+
+```
+
 ## License
 
 [MIT](LICENSE)
